@@ -134,8 +134,9 @@ button:disabled {
   box-shadow: none;
 }
 
-/* Secondary-style buttons: opt in via className="btn-secondary" — safe
-   additive class, doesn't change any button that doesn't use it. */
+/* Secondary-style buttons: anything marked as a lighter/alt action by the
+   component itself can opt in to this via className="btn-secondary" —
+   safe additive class, doesn't change any button that doesn't use it. */
 button.btn-secondary {
   background: transparent;
   color: var(--accent-dark);
@@ -195,7 +196,7 @@ code {
   background: var(--code-bg);
 }
 
-/* Generic card/section surface — opt-in via className="card" */
+/* Generic card/section surface — opt-in via className="card", additive only */
 .card {
   background: #fff;
   border: 1px solid var(--border);
